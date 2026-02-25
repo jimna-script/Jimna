@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio | Building the Future of Web</title>
+
+    <!-- Inter from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav-inner">
+        <div class="nav-logo">Portfolio</div>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#hero" class="nav-link">Home</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="hero" class="section hero">
+        <div class="shell">
+          <div class="hero-layout">
+            <div class="hero-copy">
+              <p class="eyebrow">Minimalist • Dark • Modern</p>
+
+              <h1 class="hero-title">
+                <span class="hero-title-muted">Building the</span>
+                <span class="hero-title-accent">
+                  <span id="typewriter"></span>
+                  <span class="caret" aria-hidden="true"></span>
+                </span>
+              </h1>
+
+              <p class="hero-subtitle">
+                Hi, I’m <strong>Jimna Irungu</strong> — crafting clean, high-performance
+                web experiences with a focus on clarity, motion, and modern interaction.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary"> View selected work </a>
+                <a href="#contact" class="btn btn-ghost"> Let’s collaborate </a>
+              </div>
+
+              <div class="hero-meta">
+                <span class="pill">Responsive • Accessible • Fast</span>
+                <span class="pill pill-soft">CSS Grid &amp; Flexbox</span>
+              </div>
+            </div>
+
+            <div class="hero-panel" aria-hidden="true">
+              <div class="hero-card">
+                <div class="hero-orbit hero-orbit-lg"></div>
+                <div class="hero-orbit hero-orbit-md"></div>
+                <div class="hero-orbit hero-orbit-sm"></div>
+                <div class="hero-core"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section">
+        <div class="shell">
+          <header class="section-header">
+            <p class="eyebrow">Selected projects</p>
+            <h2 class="section-title">Interfaces that feel effortless</h2>
+            <p class="section-text">
+              A small collection of work focused on interaction, speed, and
+              delightful detail.
+            </p>
+          </header>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-chip">Web Experience</div>
+              <h3 class="project-title">Neon Dashboard</h3>
+              <p class="project-text">
+                A real-time analytics dashboard with a focus on low-light
+                readability and subtle neon highlights.
+              </p>
+              <p class="project-meta">React • TypeScript • Framer Motion</p>
+            </article>
+
+            <article class="project-card">
+              <div class="project-chip">Landing Page</div>
+              <h3 class="project-title">Emerald Launch</h3>
+              <p class="project-text">
+                High-conversion product launch page with cinematic hero motion
+                and responsive layout across all breakpoints.
+              </p>
+              <p class="project-meta">HTML • CSS Grid • GSAP</p>
+            </article>
+
+            <article class="project-card">
+              <div class="project-chip">Portfolio</div>
+              <h3 class="project-title">Silent Studio</h3>
+              <p class="project-text">
+                Minimalist, typography-led portfolio with dark mode as the
+                default and micro-interactions on every card.
+              </p>
+              <p class="project-meta">Next.js • Styled Components</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section section-contact">
+        <div class="shell contact-shell">
+          <header class="section-header">
+            <p class="eyebrow">Contact</p>
+            <h2 class="section-title">Let’s build something sharp</h2>
+            <p class="section-text">
+              Share a brief about your idea, product, or team. I’ll reply with a
+              clear next step, not a generic template.
+            </p>
+          </header>
+
+          <div class="contact-layout">
+            <form
+              class="contact-form"
+              autocomplete="off"
+              action="https://formspree.io/f/xojnrawq"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="New portfolio enquiry from your site"
+              />
+              <div class="field">
+                <label for="name">Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="How should I address you?"
+                  required
+                />
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+
+              <div class="field">
+                <label for="project">Project</label>
+                <textarea
+                  id="project"
+                  name="project"
+                  rows="4"
+                  placeholder="Tell me about the product, timeline, and what success looks like for you."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                Send message
+              </button>
+            </form>
+
+            <aside class="contact-aside">
+              <div class="contact-aside-block">
+                <h3>Signal over noise</h3>
+                <p>
+                  Expect a concise response, a few thoughtful questions, and a
+                  realistic timeline. No spam. No mailing lists.
+                </p>
+              </div>
+
+              <div class="contact-aside-block contact-meta-grid">
+                <div>
+                  <p class="meta-label">Based in</p>
+                  <p class="meta-value">Remote • Web</p>
+                </div>
+                <div>
+                  <p class="meta-label">Focus</p>
+                  <p class="meta-value">Front-end &amp; UX</p>
+                </div>
+                <div>
+                  <p class="meta-label">Email</p>
+                  <p class="meta-value">
+                    <a href="mailto:Jimnairungu505@gmail.com">Jimnairungu505@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell footer-shell">
+        <span>© <span id="year"></span> • Building the future of web</span>
+        <span class="footer-dot"></span>
+        <span>Crafted in dark mode</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
